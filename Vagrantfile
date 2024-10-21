@@ -31,7 +31,6 @@ SHELL
       cp -v /vagrant/named /etc/default/
       cp -v /vagrant/named.conf.options /etc/bind/
       cp -v /vagrant/venus/named.conf.local /etc/bind/
-      
       systemctl restart named
     SHELL
   end

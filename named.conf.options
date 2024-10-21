@@ -2,6 +2,11 @@ acl confiables {
 	127.0.0.0/8;
 	192.168.57.0/24;
 };
+acl listen-adresses {
+	192.168.57.103;
+	192.168.57.102;
+	127.0.0.1;
+};
 
 options {
 	directory "/var/cache/bind";
@@ -14,10 +19,14 @@ options {
 	// nameservers, you probably want to use them as forwarders.  
 	// Uncomment the following block, and insert the addresses replacing 
 	// the all-0's placeholder.
-
+	allow-query { confiables; };
 	forwarders {
 	 	208.67.222.222;
 	 };
+	 listen-on port 53 { 192.168.57.103; };
+	 listen-on {192.168.57.102; 127.0.0.1; };
+	 listen-on-v6 { none; };
+
 	recursion yes;
 	allow-recursion { confiables; };
 
