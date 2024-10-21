@@ -16,3 +16,9 @@ El servidor esclavo está configurado para obterner la zona del maestro.
 Una vez que tenemos ambos servidores configurados usariamos este comando dig @192.168.57.102 sistema.test AXFR
 
 para comprobar si esta todo bien
+
+5. configuramos el archivo named.conf.options
+
+6. configuramos el archivo db.sistema.test.dns
+
+7. configuramos el archivo db.sistema.test.rev
