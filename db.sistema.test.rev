@@ -4,10 +4,18 @@
 ; Instead, copy it, edit named.conf, and use that copy.
 ;
 $TTL	86400
-@	IN	SOA	localhost. root.localhost. (
+@	IN	SOA tierra.sistema.test.  admin.sistema.test. (
 			      1		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			  7200 )	; Negative Cache TTL
 ;
+
+@	IN	NS	tierra.sistema.test.
+@	IN	NS	venus.sistema.test.
+;
+103 IN PTR tierra.sistema.test
+102 IN PTR  venus.sistema.test
+104 IN PTR marte.sistema.test
+101 IN PTR mercurio.sistema.test
