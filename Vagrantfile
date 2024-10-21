@@ -12,7 +12,7 @@ SHELL
     tierra.vm.network "private_network", ip: "192.168.57.103"
     tierra.vm.provision "shell", name: "master-dns", inline: <<-SHELL
       cp -v /vagrant/named.conf.options /etc/bind/
-      cp -v /vagrant/tierra/named /etc/default/
+      cp -v /vagrant/named /etc/default/
       cp -v /vagrant/tierra/named.conf.local /etc/bind/
     SHELL
 
@@ -22,7 +22,7 @@ SHELL
   config.vm.define "venus" do |venus|
     venus.vm.network "private_network", ip: "192.168.57.102"
     venus.vm.provision "shell", name: "slave-dns", inline: <<-SHELL
-      cp -v /vagrant/venus/named /etc/default/
+      cp -v /vagrant/named /etc/default/
       cp -v /vagrant/named.conf.options /etc/bind/
       cp -v /vagrant/venus/named.conf.local /etc/bind/
     SHELL
