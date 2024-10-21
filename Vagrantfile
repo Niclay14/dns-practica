@@ -14,6 +14,8 @@ SHELL
       cp -v /vagrant/named.conf.options /etc/bind/
       cp -v /vagrant/named /etc/default/
       cp -v /vagrant/tierra/named.conf.local /etc/bind/
+      cp -v /vagrant/db.sistema.test.rev /var/lib/bind/
+      cp -v /vagrant/db.sistema.test.dns /var/lib/bind/
     SHELL
 
   end
@@ -25,6 +27,8 @@ SHELL
       cp -v /vagrant/named /etc/default/
       cp -v /vagrant/named.conf.options /etc/bind/
       cp -v /vagrant/venus/named.conf.local /etc/bind/
+      cp -v /vagrant/db.sistema.test.rev /var/lib/bind/
+      cp -v /vagrant/db.sistema.test.dns /var/lib/bind/
     SHELL
   end
 end
