@@ -11,6 +11,7 @@ $TTL	86400
 			2419200		; Expire
 			  7200 )	; Negative Cache TTL
 ;
+$ORIGIN 57.168.192.in-addr.arpa.
 
 @	IN	NS	tierra.sistema.test.
 @	IN	NS	venus.sistema.test.
