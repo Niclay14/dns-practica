@@ -17,6 +17,7 @@ $TTL	86400
 ; Registros NS 
 @       IN    NS    tierra.sistema.test.
 @       IN    NS    venus.sistema.test.
+@		IN	  NS 	marte.sistema.test.
 
 ; Registros A 
 tierra  	IN    A     192.168.57.103
